@@ -1,0 +1,37 @@
+*{ margin: 0; padding:0; box-sizing: border-box;}
+body{
+    font-family: 'montserrat', sans-serif;
+    color: #fff;
+    background-image: url('banner/ist.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+    height: 100vh;
+}
+.header{
+    padding: 200px 20px 30px 20px;
+}
+.header h1{
+    font-size: 50px;
+    color: azure;
+    text-shadow: 1px 3px rgba(0,0,0,.8);
+}
+.header input{
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #fff;
+    text-align: left;
+    font-size: 15px;
+    color:antiquewhite
+}
