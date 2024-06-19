@@ -31,6 +31,20 @@ const displayResults = (weather) => {
     let humidity = document.querySelector('.humidity')
     humidity.innerText = `Nem : ${weather.main.humidity}%`
     
+    updateBackground(weather.name);
 }
+
+const updateBackground = (city) => {
+    const body = document.body;
+    if(city.toLowerCase() ==='istanbul'){
+        body.style.backgroundImage = "url('banner/ist.jpg')";
+    } else if (city.toLowerCase() === 'izmir'){
+        body.style.backgroundImage = "url('banner/izmir.jpg')";
+    } else if (city.toLowerCase() === 'ankara'){
+        body.style.backgroundImage = "url('banner/ankara.jpg')";
+    } else {
+        body.style.backgroundImage = "url('banner/generallyturk.jpg')";
+    }
+};
 
 searchBar.addEventListener('keypress',setQuery)
