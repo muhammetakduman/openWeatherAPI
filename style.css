@@ -15,6 +15,7 @@ body{
     text-align: center;
     background: rgba(0,0,0,0.4);
     height: 100vh;
+    padding: 100px;
 }
 .header{
     padding: 200px 20px 30px 20px;
@@ -34,4 +35,90 @@ body{
     text-align: left;
     font-size: 15px;
     color:antiquewhite
+}
+.city{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-shadow: 1px 3px rgba(0,0,0,.8);
+}
+.temp{
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 1px 5px rgba(0,0,0,1);
+}
+.description{
+    font-size: 25px;
+    font-style: italic;
+    text-shadow: 1px 3px rgba(0,0,0,.8);
+    margin-bottom: 10px;
+}
+.humidity{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-shadow: 1px 5px rgba(0,0,0,1)
+
+}
+.minmax{
+    font-size: 24px;
+    text-shadow: 1px 5px rgba(0,0,0,1)
+
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .app {
+        padding: 50px 20px;
+    }
+    .header {
+        padding: 100px 10px 20px 10px;
+    }
+    .header h1 {
+        font-size: 35px;
+    }
+    .header input {
+        font-size: 14px;
+    }
+    .city {
+        font-size: 28px;
+    }
+    .temp {
+        font-size: 70px;
+    }
+    .description {
+        font-size: 20px;
+    }
+    .humidity, .minmax {
+        font-size: 20px;
+    }
+}
+
+/* Extra small devices (phones, less than 600px) */
+@media (max-width: 600px) {
+    .app {
+        padding: 30px 10px;
+    }
+    .header {
+        padding: 80px 10px 10px 10px;
+    }
+    .header h1 {
+        font-size: 30px;
+    }
+    .header input {
+        font-size: 13px;
+    }
+    .city {
+        font-size: 25px;
+    }
+    .temp {
+        font-size: 60px;
+    }
+    .description {
+        font-size: 18px;
+    }
+    .humidity, .minmax {
+        font-size: 18px;
+    }
 }
